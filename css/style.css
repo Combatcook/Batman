@@ -25,6 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 45px;
+    margin-bottom: 38%;
 }
 
 .header__logo {
@@ -70,10 +71,11 @@ body {
 .header__search-button {
     background-color: transparent;
     border: none;
+    outline: none;
     padding: 14px 18px 10px;
 }
 
-.header__search-icon {
+.header__search-icon, .header__bookmark {
     cursor: pointer;
 }
 
@@ -88,4 +90,75 @@ body {
     border-radius: 50%;
     margin-left: 20px;
     object-fit: cover;
+}
+
+/*----------main-top----------*/
+
+.main-top__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.main-top__subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 39px;
+}
+
+.main-top__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main-top__info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.info-left {
+    display: flex;
+    align-items: center;
+}
+
+.main-top__film {
+    color: #333333;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.main-top__date {
+    margin-right: 33px;
+}
+
+.main-top__trailer, .main-top__more {
+    display: flex;
+    align-items: center;
+}
+
+.main-top__trailer:before, .main-top__more:after {
+    content: "";
+    width: 30px;
+    height: 30px;     
+    background-image: url(../img/play.svg); 
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+.main-top__trailer:before {  
+    margin-right: 15px;
+}
+
+.main-top__more:after {     
+    transform: rotate(90deg);
+    margin-left: 15px;
 }
