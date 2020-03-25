@@ -17,6 +17,10 @@ body {
     padding: 0 20px;
 }
 
+button, .header__bookmark, .main-content__bookmark {
+    cursor: pointer;
+}
+
 /*----------header----------*/
 
 .header {
@@ -72,11 +76,7 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 14px 18px 10px;
-}
-
-.header__search-icon, .header__bookmark {
-    cursor: pointer;
+    padding: 9px 15px 7px;
 }
 
 .header__user {
@@ -171,6 +171,7 @@ body {
     color: #000;
     padding: 43px 50px 83px;
     margin-top: 108px;
+    margin-bottom: 64px;
     display: flex;
 }
 
@@ -261,5 +262,38 @@ body {
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 14px;
+}
+
+.main-content__form {
+    margin-bottom: 48px;
+    display: flex;
+    position: relative;
+}
+
+.main-content__form-email {
+    background: rgba(241, 241, 241, 0.5);
+    border-radius: 5px;
+    padding: 12px 58px 12px 15px;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9B9B9B;
+    outline: none;
+    width: 100%; 
+}
+
+.main-content__form-email::placeholder {
+    color: #9B9B9B;
+}
+
+.main-content__form-button {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+    width: 43px;
+    height: 40px;
+    background-image: url(../img/button-check.svg);
+    position: absolute;
+    right: 0;
 }
 
