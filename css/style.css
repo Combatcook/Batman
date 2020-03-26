@@ -184,15 +184,16 @@ button, .header__bookmark, .main-content__bookmark {
     display: block;
     margin-top: -77px;
     margin-bottom: 20px;
+    width: 181px;
 }
 
 .main-content__button {
     background: #FF8F27;
-    padding: 10px 41px;
+    padding: 10px 43px;
     color: #fff;
     border: none;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 16px;
     outline: none;
     margin-bottom: 40px;
@@ -267,6 +268,10 @@ button, .header__bookmark, .main-content__bookmark {
     margin-bottom: 14px;
 }
 
+.main-content__advertising {
+    max-width: 220px;
+}
+
 .main-content__form {
     margin-bottom: 48px;
     display: flex;
@@ -281,8 +286,8 @@ button, .header__bookmark, .main-content__bookmark {
     font-size: 14px;
     line-height: 16px;
     color: #9B9B9B;
-    outline: none;
-    width: 100%; 
+    outline: none; 
+    width: 100%;
 }
 
 .main-content__form-email::placeholder {
@@ -384,6 +389,9 @@ button, .header__bookmark, .main-content__bookmark {
     .header {
         margin-bottom: 80%;
     }
+    .container {
+        max-width: 95%;
+    }
 }
 
 @media(max-width: 578px) {
@@ -405,6 +413,12 @@ button, .header__bookmark, .main-content__bookmark {
     }
     .main-content__roles {
         display: none;
+    }
+    .main-content__navigation {
+        margin-left: 5px;
+    }
+    .main-content__advertising {
+       margin: 0 auto;
     }
 }
 
@@ -435,17 +449,18 @@ button, .header__bookmark, .main-content__bookmark {
 }
 
 @media(max-width: 375px) {
+    .main-content {
+        padding: 0 20px 60px 20px;
+    }
     .main-content__left {
         margin-right: 0;
         width: 100%;
     }
     .main-content__poster {
         width: 100%;
+        margin: -50px auto 22px;
     }
     .main-content__button {
         width: 100%;
-    }
-    .main-content__navigation {
-        margin-left: 10px;
     }
 }
