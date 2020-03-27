@@ -16,4 +16,12 @@ $(document).ready(function() {
         $(this).toggleClass('navigation-item-active');
     });
 
+    $('.header__search-button').on('click', function(event) {
+        event.preventDefault();
+    });
+
+    $('.main-content__form-button').on('click', function(event) {
+        event.preventDefault();
+    });
+
 });

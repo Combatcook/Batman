@@ -528,7 +528,7 @@ button, .header__bookmark, .main-content__bookmark {
     }
     .main-content__navigation {
         margin-left: 5px;
-     }
+    }
     .main-content__navigation-item {
         flex-basis: 100%;
     }
