@@ -109,6 +109,7 @@ button, .header__bookmark, .main-content__bookmark {
     line-height: 23px;
     color: #787878;
     margin-bottom: 39px;
+    animation-delay: .5s;
 }
 
 .main-top__info {
@@ -174,6 +175,8 @@ button, .header__bookmark, .main-content__bookmark {
     margin-top: 108px;
     margin-bottom: 50px;
     display: flex;
+    animation-delay: 1s;
+    animation-duration: 1s;
 }
 
 .main-content__left {
@@ -200,7 +203,8 @@ button, .header__bookmark, .main-content__bookmark {
 }
 
 .main-content__button:hover {
-    cursor: pointer;
+    background-color: rgb(245, 210, 8);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
 }
 
 .main-content__roles {
