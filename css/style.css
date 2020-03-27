@@ -304,6 +304,10 @@ button, .header__bookmark, .main-content__bookmark {
     font-weight: 900;
 }
 
+.text span {
+    font-weight: bold;
+}
+
 .main-content__subscribe {
     font-weight: 900;
     font-size: 16px;
