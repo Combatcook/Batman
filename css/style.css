@@ -221,6 +221,10 @@ button, .header__bookmark, .main-content__bookmark {
 
 /*------------------------------*/
 
+.main-content__right {
+    width: 100%;
+}
+
 .main-content__navigation {
     display: flex;
     justify-content: space-between;
@@ -236,7 +240,7 @@ button, .header__bookmark, .main-content__bookmark {
     margin-right: 40px;
 }
 
-.main-content__navigation-item-active {
+.navigation-item-active {
     color: #FF8F27;
 }
 
@@ -246,13 +250,22 @@ button, .header__bookmark, .main-content__bookmark {
 }
 
 .main-content__about {
+    display: none;
+}
+
+.info-active {
+    display: block;
     margin-right: 78px; 
     font-size: 16px;
     line-height: 140%;
 }
 
-.text {
+.text, .text-list {
     margin-bottom: 20px;
+}
+
+.text-list {
+    padding-left: 20px;
 }
 
 .text-title {
@@ -356,7 +369,7 @@ button, .header__bookmark, .main-content__bookmark {
     .main-content__navigation-item {
         font-size: 16px;
     }
-    .text, .actors-list-item {
+    .text, .text-list, .actors-list-item {
         font-size: 14px;
     }
     .main-content__form {
