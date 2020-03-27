@@ -223,7 +223,7 @@ button, .header__bookmark, .main-content__bookmark {
     text-decoration: underline;
 }
 
-/*------------------------------*/
+
 
 .main-content__right {
     width: 100%;
@@ -253,16 +253,42 @@ button, .header__bookmark, .main-content__bookmark {
     justify-content: space-between;
 }
 
+/*----------for toggle classes----------*/
+
 .main-content__about {
     display: none;
 }
 
 .info-active {
     display: block;
-    margin-right: 78px; 
+    margin-right: 78px;
     font-size: 16px;
     line-height: 140%;
 }
+
+.actors-active {
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content__actors-card {
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.actors-img {
+    margin-bottom: 10px;
+}
+
+.actors-name {
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+/*------------------------------*/
 
 .text, .text-list {
     margin-bottom: 20px;
@@ -330,6 +356,10 @@ button, .header__bookmark, .main-content__bookmark {
     }
     .main-content__navigation-item {
         margin-right: 30px;
+    }
+    .main-content__actors-card {
+        margin-right: 0;
+        flex-basis: 50%;
     }
 }
 
@@ -400,6 +430,9 @@ button, .header__bookmark, .main-content__bookmark {
     .main-content__poster {
         margin-top: -30%;
     }
+    .main-content__actors-card {
+        flex-basis: 51%;
+    }
 }
 
 @media(max-width: 670px) {
@@ -432,13 +465,17 @@ button, .header__bookmark, .main-content__bookmark {
         display: none;
     }
     .main-content__navigation {
-        margin-left: 5px;
+       margin-left: 5px;
     }
     .main-content__advertising {
        margin: 0 auto;
     }
     .main-content__left {
-        max-height: 400px;
+        margin: 0 auto;
+    }
+    .main-content__actors-card {
+        padding: 0 10px;
+        flex-basis: 50%;
     }
 }
 
@@ -465,6 +502,11 @@ button, .header__bookmark, .main-content__bookmark {
     }
     .main-content__bookmark {
         display: none;
+    }
+    .main-content__actors-card {
+        flex-basis: auto;
+        flex-direction: column;
+        margin: 0 auto 30px;
     }
 }
 

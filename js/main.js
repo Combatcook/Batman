@@ -5,7 +5,13 @@ $(document).ready(function() {
         event.preventDefault();
         let activeItem = $(this).attr('href');
         $('.info-active').toggleClass('info-active');
-        $(activeItem).toggleClass('info-active');
+        $('.actors-active').toggleClass('actors-active');
+        if (activeItem == '#actors') {
+            $(activeItem).toggleClass('actors-active');
+        }
+        else {
+            $(activeItem).toggleClass('info-active');
+        }
         $('.navigation-item-active').toggleClass('navigation-item-active');
         $(this).toggleClass('navigation-item-active');
     });
