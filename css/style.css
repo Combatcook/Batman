@@ -172,7 +172,7 @@ button, .header__bookmark, .main-content__bookmark {
     color: #000;
     padding: 43px 50px 83px;
     margin-top: 108px;
-    margin-bottom: 64px;
+    margin-bottom: 50px;
     display: flex;
 }
 
@@ -419,6 +419,9 @@ button, .header__bookmark, .main-content__bookmark {
     }
     .main-content__advertising {
        margin: 0 auto;
+    }
+    .main-content__left {
+        max-height: 400px;
     }
 }
 

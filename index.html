@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,12 +61,12 @@
                 США, 2021 год
               </div>
 
-              <a href="#" class="main-top__trailer">
+              <a data-fancybox href="https://youtu.be/Xo8i2ZDMlQg" class="main-top__trailer">
                 Смотреть трейлер
               </a>
             </div>
 
-            <a href="#" class="main-top__more">
+            <a href="#main" class="main-top__more">
               Подробнее
             </a>
           </div>
@@ -74,7 +75,7 @@
 
         <div class="main-content">
           <div class="main-content__left">
-            <img src="img/poster.png" alt="poster" class="main-content__poster">
+            <img src="img/poster.png" alt="poster" class="main-content__poster" id="main">
 
             <button class="main-content__button">
               Буду смотреть
@@ -164,6 +165,7 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
