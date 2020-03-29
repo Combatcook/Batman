@@ -4,23 +4,23 @@ $(document).ready(function() {
     navItem.on('click', function(event) {
         event.preventDefault();
         let activeItem = $(this).attr('href');
-        $('.info-active').toggleClass('info-active');
-        $('.actors-active').toggleClass('actors-active');
+        $('.section--active').toggleClass('section--active');
+        $('.section--actors--active').toggleClass('section--actors--active');
         if (activeItem == '#actors') {
-            $(activeItem).toggleClass('actors-active');
+            $(activeItem).toggleClass('section--actors--active');
         }
         else {
-            $(activeItem).toggleClass('info-active');
+            $(activeItem).toggleClass('section--active');
         }
-        $('.navigation-item-active').toggleClass('navigation-item-active');
-        $(this).toggleClass('navigation-item-active');
+        $('.navigation-item--active').toggleClass('navigation-item--active');
+        $(this).toggleClass('navigation-item--active');
     });
 
-    $('.header__search-button').on('click', function(event) {
+    $('.search__button').on('click', function(event) {
         event.preventDefault();
     });
 
-    $('.main-content__form-button').on('click', function(event) {
+    $('.form-email__button').on('click', function(event) {
         event.preventDefault();
     });
 

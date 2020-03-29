@@ -24,16 +24,16 @@
           КиноПульс
         </div>
 
-        <form action="" class="header__search">
-          <input type="search" class="header__search-input" placeholder="Фильмы, сериалы, актеры">
-          <button type="submit" class="header__search-button">
-            <img src="img/search-icon.svg" alt="search-icon" class="header__search-icon">
+        <form action="" class="search">
+          <input type="search" class="search__input" placeholder="Фильмы, сериалы, актеры">
+          <button type="submit" class="search__button">
+            <img src="img/search-icon.svg" alt="search-icon" class="search__icon">
           </button>
         </form>
 
-        <div class="header__user">
-          <img src="img/bookmark.svg" alt="bookmark" class="header__bookmark">
-          <img src="img/avatar.jpg" alt="avatar" class="header__avatar">
+        <div class="user">
+          <img src="img/bookmark.svg" alt="bookmark" class="user__bookmark">
+          <img src="img/avatar.jpg" alt="avatar" class="user__avatar">
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
             The Batman
           </h2>
           <div class="main-top__info animated fadeInUp delay-1s">
-            <div class="info-left">
+            <div class="main-top__info-left">
               <div class="main-top__film">
                 Фильм
               </div>
@@ -86,23 +86,23 @@
               </div>
 
               <ul class="main-content__actors-list">
-                <li class="actors-list-item">Роберт Паттинсон</li>
-                <li class="actors-list-item">Зои Кравиц</li>
-                <li class="actors-list-item">Колин Фаррелл</li>
-                <li class="actors-list-item">Питер Сарсгаард</li>
-                <li class="actors-list-item">Пол Дано</li>
-                <li class="actors-list-item">Энди Серкис</li>
-                <li class="actors-list-item">Джеффри Райт</li>
-                <li class="actors-list-item">Джон Туртурро</li>
-                <li class="actors-list-item">Макс Карвер</li>
-                <li class="actors-list-item">Кон О’Нилл</li>
+                <li class="main-content__actors-list-item">Роберт Паттинсон</li>
+                <li class="main-content__actors-list-item">Зои Кравиц</li>
+                <li class="main-content__actors-list-item">Колин Фаррелл</li>
+                <li class="main-content__actors-list-item">Питер Сарсгаард</li>
+                <li class="main-content__actors-list-item">Пол Дано</li>
+                <li class="main-content__actors-list-item">Энди Серкис</li>
+                <li class="main-content__actors-list-item">Джеффри Райт</li>
+                <li class="main-content__actors-list-item">Джон Туртурро</li>
+                <li class="main-content__actors-list-item">Макс Карвер</li>
+                <li class="main-content__actors-list-item">Кон О’Нилл</li>
               </ul>
             </div>
           </div>
 
           <div class="main-content__right">
             <nav class="main-content__navigation">
-              <a href="#about" class="main-content__navigation-item navigation-item-active">Описание</a>
+              <a href="#about" class="main-content__navigation-item navigation-item--active">Описание</a>
               <a href="#reviews" class="main-content__navigation-item">Рецензии</a>
               <a href="#premieres" class="main-content__navigation-item">Премьеры</a>
               <a href="#actors" class="main-content__navigation-item">Актеры</a>
@@ -114,7 +114,7 @@
 
             <div class="main-content__info">
               <!--about-->
-              <div class="main-content__about info-active" id="about">
+              <div class="main-content__section section--active" id="about">
                 <p class="text">
                   Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC
                   Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
@@ -123,7 +123,7 @@
                   Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма
                   выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон.
                 </p>
-                <h4 class="text-title">
+                <h4 class="text__title">
                   Разработка
                 </h4>
                 <p class="text">
@@ -145,13 +145,13 @@
                 </p>
               </div>
               <!--reviews-->
-              <div class="main-content__about" id="reviews">
+              <div class="main-content__section" id="reviews">
                 <p class="text">
                   Скоро здесь появятся рецензии.
                 </p>
               </div>
               <!--premieres-->
-              <div class="main-content__about" id="premieres">
+              <div class="main-content__section" id="premieres">
                 <p class="text">
                   <span>24 июня 2021 </span> Аргентина
                 </p>
@@ -187,81 +187,81 @@
                 </p>
               </div>
               <!--actors-->
-              <div class="main-content__about" id="actors">
+              <div class="main-content__section" id="actors">
                 <div class="main-content__actors-card">
-                  <img src="img/actors-1.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-1.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Роберт Паттинсон
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Брюс Уэйн / Бэтмен
                   </div>
                 </div>
 
                 <div class="main-content__actors-card">
-                  <img src="img/actors-2.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-2.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Зои Кравиц
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Селина Кайл
                   </div>
                 </div>
 
                 <div class="main-content__actors-card">
-                  <img src="img/actors-3.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-3.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Пол Дано
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Эдвард Нэштон
                   </div>
                 </div>
 
                 <div class="main-content__actors-card">
-                  <img src="img/actors-4.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-4.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Джеффри Райт
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Джеймс Гордон
                   </div>
                 </div>
 
                 <div class="main-content__actors-card">
-                  <img src="img/actors-5.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-5.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Энди Сёркис
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Альфред Пенниуорт
                   </div>
                 </div>
 
                 <div class="main-content__actors-card">
-                  <img src="img/actors-6.jpg" alt="photo" class="actors-img">
-                  <h4 class="actors-name">
+                  <img src="img/actors-6.jpg" alt="photo" class="main-content__actors-img">
+                  <h4 class="main-content__actors-name">
                     Джон Туртурро
                   </h4>
-                  <div class="actors-pers">
+                  <div class="main-content__actors-pers">
                     Кармайн Фальконе
                   </div>
                 </div>
               </div>
               <!--awards-->
-              <div class="main-content__about" id="awards">
+              <div class="main-content__section" id="awards">
                 <p class="text">
                   У фильма пока нет наград.
                 </p>
               </div>
               <!--facts-->
-              <div class="main-content__about" id="facts">
+              <div class="main-content__section" id="facts">
                 <p class="text">
                   На данный момент нет ни одного факта о фильме.
                 </p>
                 <p class="text">
                   Зато есть другие интересные факты:
-                  <ul class="text-list">
+                  <ul class="text__list">
                     <li>Данек - гей</li>
                     <li>Максим Богданов - кроль</li>
                     <li>Хуанпетро - машина</li>
@@ -269,7 +269,7 @@
                 </p>
               </div>
               <!--websites-->
-              <div class="main-content__about" id="websites">
+              <div class="main-content__section" id="websites">
                 <p class="text">
                   Сайты отсутствуют, но кто ищет, тот всегда найдет!
                 </p>
@@ -280,9 +280,9 @@
                   Подпишитесь на обновления
                 </h4>
 
-                <form action="" class="main-content__form">
-                  <input type="email" class="main-content__form-email" placeholder="Ваш Email">
-                  <button type="submit" class="main-content__form-button"></button>
+                <form action="" class="form-email">
+                  <input type="email" class="form-email__input" placeholder="Ваш Email">
+                  <button type="submit" class="form-email__button"></button>
                 </form>
 
                 <a href="#" class="main-content__banner">
